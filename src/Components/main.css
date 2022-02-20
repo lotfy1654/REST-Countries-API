@@ -1,0 +1,156 @@
+:root {
+  --background-light:hsl(0, 0%, 98%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --background-dark: hsl(207, 26%, 17%);
+  --dark-mode-text: hsl(0, 0%, 100%);
+  --border-dark: #fff;
+  --border-light: #333;
+  --back-card-dark: #202c37;
+  --back-card-light: #fff;
+}
+
+.light {
+  --background-color: var(--background-light);
+  --color-text: var(--light-mode-text);
+  --border: var(--border-light);
+  --back-card: var(--back-card-light);
+}
+
+.dark {
+  --background-color: var(--background-dark);
+  --color-text: var(--dark-mode-text);
+  --border: var(--border-dark);
+  --back-card: var(--back-card-dark);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.nav-bar .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.nav-bar .box .nav-text h3 {
+  color: var(--color-text);
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .nav-bar .box .nav-text h3 {
+    font-size: 20px;
+  }
+}
+.nav-bar .box .mode {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.nav-bar .box .mode .light-mode {
+  padding: 5px;
+  color: var(--color-text);
+}
+.nav-bar .box .mode .light-mode span {
+  text-transform: capitalize;
+}
+.nav-bar .box .mode .dark-mode {
+  padding: 5px;
+  color: #FCE570;
+}
+.nav-bar .box .mode .dark-mode span {
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .nav-bar .box .mode {
+    font-size: 17px;
+  }
+}
+
+.countries-box .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.countries-box .search-box .input-box input {
+  background: var(--back-card);
+  border: 2px solid var(--border);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.countries-box .search-box .input-box input::placeholder {
+  color: var(--color-text);
+}
+.countries-box .search-box .input-box input:focus {
+  outline: none;
+}
+.countries-box .data-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+  grid-gap: 10px;
+}
+.countries-box .data-box .item {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.countries-box .data-box .item .card {
+  border: 0px;
+  background: var(--back-card);
+}
+.countries-box .data-box .item .card .card-img {
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 185px;
+}
+.countries-box .data-box .item .card .card-body {
+  border: 1px solid var(--border);
+  border-radius: 0px;
+}
+.countries-box .data-box .item .card .card-body .card-title {
+  text-transform: capitalize;
+  color: var(--color-text);
+}
+.countries-box .data-box .item .card .card-body p {
+  text-transform: capitalize;
+  color: var(--color-text);
+  font-weight: 500;
+}
+.countries-box .data-box .item .card .card-body p span {
+  font-weight: 400;
+}
+.countries-box .data-box-search, .countries-box .data-box-select {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+  grid-gap: 10px;
+}
+.countries-box .data-box-search .item, .countries-box .data-box-select .item {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.countries-box .data-box-search .item .card, .countries-box .data-box-select .item .card {
+  border: 0px;
+  background: var(--back-card);
+}
+.countries-box .data-box-search .item .card .card-img, .countries-box .data-box-select .item .card .card-img {
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 185px;
+}
+.countries-box .data-box-search .item .card .card-body, .countries-box .data-box-select .item .card .card-body {
+  border: 1px solid var(--border);
+  border-radius: 0px;
+}
+.countries-box .data-box-search .item .card .card-body .card-title, .countries-box .data-box-select .item .card .card-body .card-title {
+  text-transform: capitalize;
+  color: var(--color-text);
+}
+.countries-box .data-box-search .item .card .card-body p, .countries-box .data-box-select .item .card .card-body p {
+  text-transform: capitalize;
+  color: var(--color-text);
+  font-weight: 500;
+}
+.countries-box .data-box-search .item .card .card-body p span, .countries-box .data-box-select .item .card .card-body p span {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */
