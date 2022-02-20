@@ -84,6 +84,14 @@ body {
 .countries-box .search-box .input-box input:focus {
   outline: none;
 }
+@media (max-width: 576px) {
+  .countries-box .search-box {
+    flex-wrap: wrap;
+  }
+  .countries-box .search-box .select-box {
+    margin-top: 10px;
+  }
+}
 .countries-box .data-box {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
